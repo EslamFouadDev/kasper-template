@@ -1,0 +1,52 @@
+/* Start Global */
+/* Start Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* End Reset */
+
+/* Start Variable */
+:root {
+    --main-color: #19c8fa;
+}
+/* End Variable */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium Screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Larg Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global */
