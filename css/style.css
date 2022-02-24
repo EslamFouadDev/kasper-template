@@ -10,12 +10,13 @@
 /* Start Variable */
 :root {
     --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
 }
 /* End Variable */
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #3d3d3d;;
+    /* background-color: #3d3d3d;; */
 }
 
 ul {
@@ -53,6 +54,11 @@ a {
 /* End Global */
 
 /* Start Header */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 header nav {
     display: flex;
     align-items: center;
@@ -147,3 +153,115 @@ header nav i.response {
 }
 
 /* End Header */
+/* Start Landing */
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.landing .content {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    background-color: var(--transparent-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+.landing .content .text {
+    width: 500px;
+}
+
+.landing .content .text h2 {
+    color: white;
+    line-height: 1.6;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.landing .content .text p {
+    color: white;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.landing i.change-background {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s color;
+}
+
+.landing i.change-background:hover {
+    color: var(--main-color);
+}
+
+.landing .fa-angle-left{
+    left: 30px;
+}
+
+.landing .fa-angle-right {
+    right: 30px;
+}
+
+.landing ul.change-background {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.landing ul.change-background li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.landing ul.change-background li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.landing ul.change-background li:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* .landing::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+.test {
+    height: 328px;
+    width: 50%;
+    background-color: #19c9fac2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+/* End Landing */
