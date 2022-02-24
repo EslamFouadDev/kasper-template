@@ -184,6 +184,16 @@ header nav i.response {
     width: 500px;
 }
 
+@media (max-width: 768px) {
+    .landing .content .text {
+        width: 100%;
+    }
+    .landing .content {
+        width: 100%;
+        display: block;
+    }
+}
+
 .landing .content .text h2 {
     color: white;
     line-height: 1.6;
@@ -206,6 +216,12 @@ header nav i.response {
     font-size: 30px;
     cursor: pointer;
     transition: .3s color;
+}
+
+@media (max-width: 768px) {
+    .landing i.change-background {
+        display: none;
+    }
 }
 
 .landing i.change-background:hover {
