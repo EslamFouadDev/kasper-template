@@ -216,6 +216,7 @@ header nav i.response {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.600);
+    /* z-index: -1; */
 }
 
 .landing .content {
@@ -314,21 +315,6 @@ header nav i.response {
     border-color: var(--main-color);
 }
 
-/* .landing::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.596);
-}
-.test {
-    height: 328px;
-    width: 50%;
-    background-color: #19c9fac2;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-} */
 /* End Landing */
 
 /* Start Services */
@@ -345,8 +331,6 @@ header nav i.response {
 .services .services-items .item {
     display: flex;
 }
-/*     background: #ffffff;
-    box-shadow: 1px 1px 5px #cbcbcb; */
 
 @media (max-width: 768px) {
     .services .services-items .item {
@@ -388,3 +372,69 @@ header nav i.response {
     color: #777;
 }
 /* End Services */
+
+/* Start Design Section */
+.design-section {
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.design-section .design {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.design-section .test {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    bottom: -140px;
+}
+
+@media (max-width: 768px) {
+    .design-section .test {
+        display: none;
+    }
+}
+
+.design-section .side-content {
+    display: flex;
+    background-color: var(--transparent-color);
+    flex: 1;
+    position: relative;
+    min-width: 420px;
+}
+
+.design-section .side-content .text {
+    padding: 50px;
+}
+
+.design-section .side-content .text h2 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.design-section .side-content .text ul li{
+    color: white;
+}
+
+.design-section .side-content .text ul li:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.design-section .side-content .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 600;
+    margin-right: 15px;
+    position: relative;
+    top: 1px;
+}
+/* End Design Section */
