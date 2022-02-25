@@ -11,6 +11,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px
 }
 /* End Variable */
 
@@ -62,6 +63,7 @@ a {
     font-weight: normal;
     margin-bottom: 60px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .main-heading h2::after {
@@ -92,10 +94,11 @@ a {
 }
 
 .main-heading p {
+    max-width: 100%;
     color: #777;
     line-height: 1.8;
     width: 500px;
-    margin: auto;
+    margin: 0 auto 100px;
 }
 /* End Components */
 
@@ -327,3 +330,61 @@ header nav i.response {
     transform: translateY(-50%);
 } */
 /* End Landing */
+
+/* Start Services */
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.services .services-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 60px 40px;
+}
+
+.services .services-items .item {
+    display: flex;
+}
+/*     background: #ffffff;
+    box-shadow: 1px 1px 5px #cbcbcb; */
+
+@media (max-width: 768px) {
+    .services .services-items .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #e7e7e7, -1px -1px 15px #e7e7e7;
+        padding: 20px;
+    }
+    .services .services-items {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .services .services-items .item {
+        box-shadow: 1px 1px 15px #e7e7e7, -1px -1px 15px #e7e7e7;
+        padding: 50px;
+    }
+}
+
+.services .services-items .item .service-icon {
+    flex-basis: 90px;
+}
+
+.services .services-items .item .services-content {
+    flex: 1;
+}
+
+.services .services-items .item .services-content h2{
+    color: var(--main-color);
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.services .services-items .item .services-content p {
+    line-height: 2;
+    color: #777;
+}
+/* End Services */
