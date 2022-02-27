@@ -522,3 +522,43 @@ header nav i.response {
 
 }
 /* End Portfolio */
+/* Start Video */
+.video {
+    position: relative;
+}
+.video-player {
+    width: 100%;
+}
+
+.video .content {
+    position: absolute;
+    background-color: var(--transparent-color);
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 70px 0;
+    
+}
+
+.video .content h3 {
+    color: white;
+    margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.video .content p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.video .content button {
+    background: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+/* End Video */
