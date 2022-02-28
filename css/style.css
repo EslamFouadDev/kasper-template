@@ -217,6 +217,8 @@ header nav i.response {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.600);
     /* z-index: -1; */
+    top: 0;
+    left: 0;
 }
 
 .landing .content {
@@ -579,6 +581,7 @@ header nav i.response {
 }
 .about-section .about-info {
     background-image: url(../images/stats.png);
+    background-attachment: fixed;
     min-height: 450px;
     width: 100%;
     position: relative;
@@ -660,36 +663,36 @@ header nav i.response {
         margin-bottom: 50px;
     }
 }
-.our-skills .testimonials .review .review-item {
+.our-skills .testimonials .review-item {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
     justify-content: space-between;
 }
 @media (max-width: 767px) {
-    .our-skills .testimonials .review .review-item {
+    .our-skills .testimonials .review-item {
         flex-direction: column;
     }
 }
-.our-skills .testimonials .review .review-item img {
+.our-skills .testimonials .review-item img {
     max-width: 100%;
     width: 18%;
     border-radius: 50%;
 }
-.our-skills .testimonials .review .review-item .text {
+.our-skills .testimonials .review-item .text {
     width: 75%;
 }
 @media (max-width: 767px) {
-    .our-skills .testimonials .review .review-item .text {
+    .our-skills .testimonials .review-item .text {
         width: 100%;
     }
 }
-.our-skills .testimonials .review .review-item .text p:first-child {
+.our-skills .testimonials .review-item .text p:first-child {
     line-height: 2;
     text-align: center;
 }
 
-.our-skills .testimonials .review .review-item .text p:last-of-type {
+.our-skills .testimonials .review-item .text p:last-of-type {
     text-align: right;
     font-size: 14px;
     color: #777;
@@ -754,3 +757,43 @@ header nav i.response {
     padding: 5px;
 }
 /* End Skills */
+/* Start Qoute */
+.qoute {
+    background: url(../images/quote.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    color: white;
+}
+.qoute .container {
+    position: relative;
+}
+.qoute q {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 30px;
+    
+}
+
+.qoute q::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 600;
+    margin: 20px;
+    font-size: 45px;
+    color: var(--main-color);
+}
+
+.qoute q::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-weight: 600;
+    margin: 20px;
+    font-size: 45px;
+    color: var(--main-color);
+}
+
+/* End Qoute */
