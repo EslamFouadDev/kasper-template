@@ -619,3 +619,138 @@ header nav i.response {
     font-size: 14px;
 }
 /*End  About*/
+/* Start Skills */
+.our-skills {
+    /* padding-top: var(--section-padding); */
+    padding-bottom: var(--section-padding);
+}
+.our-skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 991px) {
+    .our-skills .container {
+        flex-direction: column;
+    }
+}
+
+.our-skills .container .heading {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.our-skills .container .heading h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.our-skills .container .heading p {
+    color: #777;
+    line-height: 2;
+}
+
+.our-skills .container .testimonials,
+.our-skills .container .skills {
+    flex-basis: 45%;
+}
+@media (max-width: 991px) {
+    .our-skills .container .testimonials {
+        margin-bottom: 50px;
+    }
+}
+.our-skills .testimonials .review .review-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .our-skills .testimonials .review .review-item {
+        flex-direction: column;
+    }
+}
+.our-skills .testimonials .review .review-item img {
+    max-width: 100%;
+    width: 18%;
+    border-radius: 50%;
+}
+.our-skills .testimonials .review .review-item .text {
+    width: 75%;
+}
+@media (max-width: 767px) {
+    .our-skills .testimonials .review .review-item .text {
+        width: 100%;
+    }
+}
+.our-skills .testimonials .review .review-item .text p:first-child {
+    line-height: 2;
+    text-align: center;
+}
+
+.our-skills .testimonials .review .review-item .text p:last-of-type {
+    text-align: right;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.our-skills .testimonials ul {
+    text-align: center;
+}
+.our-skills .testimonials ul li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #777;
+    display: inline-block;
+    border-radius: 50%;
+}
+.our-skills .testimonials ul .active {
+    background-color: var(--main-color);
+    border: none;
+}
+
+.our-skills .skills .prog-holder {
+    margin-bottom: 40px;
+}
+
+.our-skills .skills .prog-holder h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.our-skills .skills .prog-holder .prog {
+    width: 100%;
+    height: 25px;
+    background: #e1e1e1;
+}
+
+.our-skills .skills .prog-holder .prog span {
+    height: 100%;
+    background: var(--main-color);
+    display: inline-block;
+    position: relative;
+}
+.our-skills .skills .prog-holder .prog span::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    right: -10px;
+    top: -15px;
+}
+.our-skills .skills .prog-holder .prog span::after {
+    content: attr(shit);
+    position: absolute;
+    background: black;
+    width: fit-content;
+    height: 20px;
+    border-radius: 5px;
+    right: -20px;
+    top: -45px;
+    color: white;
+    text-align:center;
+    padding: 5px;
+}
+/* End Skills */
