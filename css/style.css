@@ -797,3 +797,74 @@ header nav i.response {
 }
 
 /* End Qoute */
+
+/* Start pricing */
+.pricing-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 25px;
+}
+.pricing-plan {
+    text-align: center;
+    background-color: #fcfcfc;
+}
+.pricing-plan .head {
+    padding: 30px 0;
+    border-top: 1px solid var(--transparent-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing-plan .head h3 {
+    font-weight: normal;
+    font-size: 21px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+.pricing-plan .head span {
+    display: block;
+    font-weight: bold;
+    font-size: 56px;
+}
+.pricing-plan .head span::before {
+    content: "$";
+    font-size: 24px;
+    font-weight: normal;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+}
+.pricing-plan .head span::after {
+    content: "/Mo";
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+}
+.pricing-plan ul {
+
+}
+.pricing-plan ul li{
+
+}
+.pricing-plan ul li:not(:last-child){
+    border-bottom: 1px solid var(--main-color);
+    padding: 20px;
+    width: 170px;
+    margin: auto;
+}
+.pricing-plan ul li:last-child {
+    border-bottom: 1px solid var(--main-color);
+    padding: 20px;
+}
+.pricing-plan a{
+    margin-top: 30px;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+}
+/* End pricing */
