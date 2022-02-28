@@ -802,8 +802,8 @@ header nav i.response {
 .pricing-section {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    text-align: center;
 }
-
 .pricing-section .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -844,12 +844,6 @@ header nav i.response {
     position: relative;
     left: 10px;
 }
-.pricing-plan ul {
-
-}
-.pricing-plan ul li{
-
-}
 .pricing-plan ul li:not(:last-child){
     border-bottom: 1px solid var(--main-color);
     padding: 20px;
@@ -866,5 +860,17 @@ header nav i.response {
     margin: 30px auto;
     padding: 20px;
     border: 1px solid var(--main-color);
+}
+
+.pricing-section .special p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+.pricing-section .special a {
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
 }
 /* End pricing */
